@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Tic Tac Toe</title>
+        <style type="text/css">
+            div
+            {
+            height: 100px;
+            width:  100px;
+            position: absolute;
+            bottom: 40px;
+
+            }
+            h1
+            {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            color: white;
+            }
+            #x
+            {
+            background-color: #5D6D7E; 
+            border: none;
+            color: black;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            font-size: 18px;
+            margin: 4px 2px;
+            cursor: pointer;
+            position: absolute;
+            right: 500px;
+            bottom: 50px;
+            }
+            #x:hover {
+                background-color: #34495E;
+            }
+            table
+            {
+            border-width: 0px;
+            border-color: #2C3E50;
+            border-spacing: 0px;
+            border-width: 5px;
+            cursor: pointer;
+            }
+            body
+            {
+            background-color: #EBDEF0;
+            }
+            td
+            {
+                text-align: center;
+                width: 150px;
+                height: 150px;  
+            }
+        </style>
+        <script type="text/javascript">
+            function f(variable) {
+            
+            	
+            
+            if (document.getElementById('a1').checked == true ) 
+            
+            {	
+                document.getElementById(variable).innerHTML="X";
+            	document.getElementById(variable).style.fontFamily="'Trebuchet MS', Arial, Helvetica, sans-serif";
+                document.getElementById(variable).style.fontSize="50px";
+            	document.getElementById('a2').checked = true;
+            	
+            }
+            
+            else if(document.getElementById('a2').checked == true)
+            
+            {
+            	document.getElementById(variable).innerHTML="O";
+
+                document.getElementById(variable).style.fontFamily="'Trebuchet MS', Arial, Helvetica, sans-serif";
+                document.getElementById(variable).style.fontSize="50px";
+            	document.getElementById('a1').checked = true;
+            	
+            }	
+            
+            else
+            
+            {
+            	alert('Please select X or O.');
+            }	
+            f2();
+            }		
+            function f2()
+            {
+            if((document.getElementById('t1').innerHTML == "X" &&
+             document.getElementById('t2').innerHTML == "X" && 
+             document.getElementById('t3').innerHTML == "X")
+            	||
+            (document.getElementById('t1').innerHTML == "O" &&
+             document.getElementById('t2').innerHTML == "O" && 
+             document.getElementById('t3').innerHTML == "O")
+            	||
+            (document.getElementById('t1').innerHTML == "X" &&
+             document.getElementById('t4').innerHTML == "X" && 
+             document.getElementById('t7').innerHTML == "X")
+            	||
+            (document.getElementById('t1').innerHTML == "O" &&
+             document.getElementById('t4').innerHTML == "O" && 
+             document.getElementById('t7').innerHTML == "O")
+            	||
+            (document.getElementById('t1').innerHTML == "X" &&
+             document.getElementById('t5').innerHTML == "X" && 
+             document.getElementById('t9').innerHTML == "X") 
+            	||
+            (document.getElementById('t1').innerHTML == "O" &&
+             document.getElementById('t5').innerHTML == "O" && 
+             document.getElementById('t9').innerHTML == "O") 
+            	|| 
+            (document.getElementById('t2').innerHTML == "X" &&
+             document.getElementById('t5').innerHTML == "X" && 
+             document.getElementById('t8').innerHTML == "X") 
+             	||
+            (document.getElementById('t2').innerHTML == "O" &&
+             document.getElementById('t5').innerHTML == "O" && 
+             document.getElementById('t8').innerHTML == "O") 
+             	||
+            (document.getElementById('t3').innerHTML == "X" &&
+             document.getElementById('t5').innerHTML == "X" && 
+             document.getElementById('t7').innerHTML == "X") 
+            	||
+            (document.getElementById('t3').innerHTML == "O" &&
+             document.getElementById('t5').innerHTML == "O" && 
+             document.getElementById('t7').innerHTML == "O") 
+            	||	
+            (document.getElementById('t4').innerHTML == "X" &&
+             document.getElementById('t5').innerHTML == "X" && 
+             document.getElementById('t6').innerHTML == "X") 
+            	||
+            (document.getElementById('t4').innerHTML == "O" &&
+             document.getElementById('t5').innerHTML == "O" && 
+             document.getElementById('t6').innerHTML == "O") 
+            	||
+            (document.getElementById('t7').innerHTML == "X" &&
+             document.getElementById('t8').innerHTML == "X" && 
+             document.getElementById('t9').innerHTML == "X") 
+            	||
+            (document.getElementById('t7').innerHTML == "O" &&
+             document.getElementById('t8').innerHTML == "O" && 
+             document.getElementById('t9').innerHTML == "O") 
+            	||
+            (document.getElementById('t3').innerHTML == "X" &&
+             document.getElementById('t6').innerHTML == "X" && 
+             document.getElementById('t9').innerHTML == "X")
+                ||
+            (document.getElementById('t3').innerHTML == "O" &&
+             document.getElementById('t6').innerHTML == "O" && 
+             document.getElementById('t9').innerHTML == "O")) 	
+            {
+             if((document.getElementById('t1').innerHTML == "O" &&
+             document.getElementById('t2').innerHTML == "O" && 
+             document.getElementById('t3').innerHTML == "O")
+            	||
+            (document.getElementById('t1').innerHTML == "O" &&
+             document.getElementById('t4').innerHTML == "O" && 
+             document.getElementById('t7').innerHTML == "O")
+            	||
+            (document.getElementById('t1').innerHTML == "O" &&
+             document.getElementById('t5').innerHTML == "O" && 
+             document.getElementById('t9').innerHTML == "O") 
+            	||
+            (document.getElementById('t2').innerHTML == "O" &&
+             document.getElementById('t5').innerHTML == "O" && 
+             document.getElementById('t8').innerHTML == "O") 
+             	||
+            (document.getElementById('t3').innerHTML == "O" &&
+             document.getElementById('t5').innerHTML == "O" && 
+             document.getElementById('t7').innerHTML == "O") 
+            	||
+            (document.getElementById('t4').innerHTML == "O" &&
+             document.getElementById('t5').innerHTML == "O" && 
+             document.getElementById('t6').innerHTML == "O") 
+            	||
+            (document.getElementById('t7').innerHTML == "O" &&
+             document.getElementById('t8').innerHTML == "O" && 
+             document.getElementById('t9').innerHTML == "O") 
+            	||
+            (document.getElementById('t3').innerHTML == "O" &&
+             document.getElementById('t6').innerHTML == "O" && 
+             document.getElementById('t9').innerHTML == "O"))
+            		{
+            			alert('O WON');
+            			setTimeout(function(){location.reload();}, 800);
+            		}
+            		else
+            		{
+            			alert('X WON');	
+            			setTimeout(function(){location.reload();}, 800);
+            		}
+            }
+            }
+            
+            function reset()
+            {
+            location.reload();
+            }
+        </script>
+    </head>
+    <body  >
+        <h1 align="center" style="color: black;">TIC TAC TOE </h1>
+        <table height=450px width=450px border="1px" align=center >
+            <tr>
+                <td id="t1" onclick="f('t1')"></td>
+                <td id="t2" onclick="f('t2')"></td>
+                <td id="t3" onclick="f('t3')"></td>
+            </tr>
+            <tr>
+                <td id="t4" onclick="f('t4')"></td>
+                <td id="t5" onclick="f('t5')"></td>
+                <td id="t6" onclick="f('t6')"></td>
+            </tr>
+            <tr>
+                <td id="t7" onclick="f('t7')"></td>
+                <td id="t8" onclick="f('t8')"></td>
+                <td id="t9" onclick="f('t9')"></td>
+            </tr>
+        </table>
+        <br><br><br><br><br>
+        <div style="left: 515px;">
+            <br>
+            <p style="font-size: 25px;font-weight: bold;font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;"> X </p>
+            <input id="a1" type="radio"  name="cross" value="blue">
+        </div>
+        <div style="left: 599px;">
+            <br>
+            <p style="font-size: 25px;font-weight: bold;font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;"> O </p>
+            <input id="a2" type="radio"  name="cross" value="green">
+        </div>
+        
+        <input type="reset" id="x" onclick="reset()" value="DRAW or RESET">
+        
+        <h2 align="right"> By Vidhi Parekh </h2>
+    </body>
+</html>
